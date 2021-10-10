@@ -3,20 +3,23 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Redirect
 } from "react-router-dom";
 import {AboutScreen} from "./AboutScreen";
 import {LoginScreen} from "./LoginScreen";
 import {HomeScreen} from "./HomeScreen";
+import { NavBar } from './NavBar';
 
 export const AppRouter = () => {
   return (
     <Router>
       <>
+        <NavBar />
         <Switch>
           <Route exact path="/about" component={ AboutScreen } />
           <Route exact path="/login" component={ LoginScreen } />
           <Route exact path="/" component={ HomeScreen } />
+          <Redirect to="/" />
         </Switch>
       </>
     </Router>
