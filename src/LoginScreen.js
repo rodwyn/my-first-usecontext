@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const App = () => {
+export const LoginScreen = () => {
   return (
     <div>
-      <h1>App</h1>
+      <h1>LoginScreen</h1>
       <hr />
     </div>
   )

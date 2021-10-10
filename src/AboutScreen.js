@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const App = () => {
+export const AboutScreen = () => {
   return (
     <div>
-      <h1>App</h1>
+      <h1>AboutScreen</h1>
       <hr />
     </div>
   )
