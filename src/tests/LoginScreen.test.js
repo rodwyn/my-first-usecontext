@@ -9,7 +9,7 @@ describe('Testing <LoginScreen /> component.', () => {
   <UserContext.Provider value={{
     setUser
   }}>
-    <LoginScreen />);
+    <LoginScreen />
   </UserContext.Provider>);
 
   test('should render correctly.', () => {
